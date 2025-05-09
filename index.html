@@ -6,7 +6,12 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wdth,wght@0,75..100,400..700;1,75..100,400..700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
+   <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" 
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer">
    <link rel="stylesheet" href="./css/styles.css">
    <title>Document</title>
 </head>
@@ -14,7 +19,7 @@
    <header class="hdr">
       <div class="container">
          <nav class="dvnv">
-            <a class="logo" href="./index.html">Web<span class="stdio">Studio</span></a>
+            <a class="logo hd-logo" href="./index.html">Web<span class="stdio">Studio</span></a>
             <ul class="ula">
                <li><a class="nav-li studio" href="./index.html">Studio</a></li>
                <li><a class="nav-li" href="">Portfolio</a></li>
@@ -27,6 +32,66 @@
                <li><a class="padro" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
          </address>
+         <button class="head-butt" type="button">
+            <svg class="head-icon" width="24" height="24">
+               <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+         </button>
+      </div>
+      <div class="mob-menu">
+         <div class="container mob-menu-cntr">
+            <button class="mob-menu-butt" type="button">
+               <svg class="mob-icon-butt" width="8" height="8">
+                  <use href="./images/icons.svg#icon-close-black"></use>
+               </svg>
+            </button>
+            <nav class="mob-nav">
+               <ul class="mob-nav-ul">
+                  <li class="mob-nav-li">
+                     <a class="mob-li-a current" href="./index.html" target="_blank">Studio</a>
+                  </li>
+                  <li class="mob-nav-li">
+                     <a class="mob-li-a" href="" target="_blank">Portfolio</a>
+                  </li>
+               </ul>
+            </nav>
+            <address class="mob-address">
+               <ul class="mob-add-ul">
+                  <li class="mob-add-li"><a class="mob-add-a" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                  <li class="mob-add-li"><a class="mob-add-a" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+               </ul>
+            </address>
+            <ul class="mob-icons-ul">
+               <li class="mob-icons-li">
+                  <a class="mob-icons-a" href="" target="_blank">
+                     <svg class="mob-svg" width="16px" height="16px">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="mob-icons-li">
+                  <a class="mob-icons-a" href="" target="_blank">
+                     <svg class="mob-svg" width="16px" height="16px">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="mob-icons-li">
+                  <a class="mob-icons-a" href="" target="_blank">
+                     <svg class="mob-svg" width="16px" height="16px">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="mob-icons-li">
+                  <a class="mob-icons-a" href="" target="_blank">
+                     <svg class="mob-svg" width="16px" height="16px">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                     </svg>
+                  </a>
+               </li>
+            </ul>
+         </div>
       </div>
    </header>
    <main>
@@ -79,39 +144,39 @@
             </ul>
          </div>
       </section>
-      <section class="sect">
+      <section class="sect team">
          <div class="container">
             <h2 class="golov">Our Team</h2>
             <ul class="ulsec">
                <li class="list">
-                  <img src="./images/photo-Mark-G.jpg" alt="photo-Mark-Guerrero" width="264">
+                  <img srcset="./images/mark1.jpg 1x, ./images/mark2.jpg 2x" src="./images/photo-Mark-G.jpg" alt="photo-Mark-Guerrero" width="264" height="260">
                      <div class="cldv">
                         <h3 class="galava">Mark Guerrero</h3>
                         <p class="parag">Product Designer</p>
                         <ul class="sect-contr-ul">
                            <li class="sect-contr-list">
-                              <a href="" class="sect-contr-a">
+                              <a href="https://www.instagram.com" class="sect-contr-a" target="_blank">
                                  <svg width="16" height="16" class="sect-contr-icon">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                  </svg>
                               </a>
                            </li>
                            <li class="sect-contr-list">
-                              <a href="" class="sect-contr-a">
+                              <a href="https://x.com" class="sect-contr-a" target="_blank">
                                  <svg width="16" height="16" class="sect-contr-icon">
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                  </svg>
                               </a>
                            </li>
                            <li class="sect-contr-list">
-                              <a href="" class="sect-contr-a">
+                              <a href="https://www.facebook.com" class="sect-contr-a" target="_blank">
                                  <svg width="16" height="16" class="sect-contr-icon">
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                  </svg>
                               </a>
                            </li>
                            <li class="sect-contr-list">
-                              <a href="" class="sect-contr-a">
+                              <a href="https://linkedin.com" class="sect-contr-a" target="_blank">
                                  <svg width="16" height="16" class="sect-contr-icon">
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                  </svg>
@@ -121,34 +186,34 @@
                      </div>
                </li>
                <li class="list">
-                  <img src="./images/photo-Tom-F.jpg" alt="photo-Tom-Ford" width="264">
+                  <img srcset="./images/tom1.jpg 1x, ./images/tom2.jpg 2x" src="./images/photo-Tom-F.jpg" alt="photo-Tom-Ford" width="264" height="260">
                      <div class="cldv">
                         <h3 class="galava">Tom Ford</h3>
                         <p class="parag">Frontend Developer</p>
                         <ul class="sect-contr-ul">
                            <li class="sect-contr-list">
-                              <a href="" class="sect-contr-a">
+                              <a href="https://www.instagram.com" class="sect-contr-a" target="_blank">
                                  <svg width="16" height="16" class="sect-contr-icon">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                  </svg>
                               </a>
                            </li>
                            <li class="sect-contr-list">
-                              <a href="" class="sect-contr-a">
+                              <a href="https://x.com" class="sect-contr-a" target="_blank">
                                  <svg width="16" height="16" class="sect-contr-icon">
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                  </svg>
                               </a>
                            </li>
                            <li class="sect-contr-list">
-                              <a href="" class="sect-contr-a">
+                              <a href="https://www.facebook.com" class="sect-contr-a" target="_blank">
                                  <svg width="16" height="16" class="sect-contr-icon">
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                  </svg>
                               </a>
                            </li>
                            <li class="sect-contr-list">
-                              <a href="" class="sect-contr-a">
+                              <a href="https://linkedin.com" class="sect-contr-a" target="_blank">
                                  <svg width="16" height="16" class="sect-contr-icon">
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                  </svg>
@@ -158,34 +223,34 @@
                      </div>
                </li>
                <li class="list">
-                  <img src="./images/photo-Camila-G.jpg" alt="photo-Camila-Garcia" width="264">
+                  <img srcset="./images/camila1.jpg 1x, ./images/camila2.jpg 2x" src="./images/photo-Camila-G.jpg" alt="photo-Camila-Garcia" width="264" height="260">
                      <div class="cldv">
                         <h3 class="galava">Camila Garcia</h3>
                         <p class="parag">Marketing</p>
                         <ul class="sect-contr-ul">
                            <li class="sect-contr-list">
-                              <a href="" class="sect-contr-a">
+                              <a href="https://www.instagram.com" class="sect-contr-a" target="_blank">
                                  <svg width="16" height="16" class="sect-contr-icon">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                  </svg>
                               </a>
                            </li>
                            <li class="sect-contr-list">
-                              <a href="" class="sect-contr-a">
+                              <a href="https://x.com" class="sect-contr-a" target="_blank">
                                  <svg width="16" height="16" class="sect-contr-icon">
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                  </svg>
                               </a>
                            </li>
                            <li class="sect-contr-list">
-                              <a href="" class="sect-contr-a">
+                              <a href="https://www.facebook.com" class="sect-contr-a" target="_blank">
                                  <svg width="16" height="16" class="sect-contr-icon">
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                  </svg>
                               </a>
                            </li>
                            <li class="sect-contr-list">
-                              <a href="" class="sect-contr-a">
+                              <a href="https://linkedin.com" class="sect-contr-a" target="_blank">
                                  <svg width="16" height="16" class="sect-contr-icon">
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                  </svg>
@@ -195,34 +260,34 @@
                      </div>
                </li>
                <li class="list">
-                  <img src="./images/photo-Daniel-W.jpg" alt="photo-Daniel-Wilson" width="264">
+                  <img srcset="./images/daniel1.jpg 1x, ./images/daniel2.jpg 2x" src="./images/photo-Daniel-W.jpg" alt="photo-Daniel-Wilson" width="264" height="260">
                      <div class="cldv">
                         <h3 class="galava">Daniel Wilson</h3>
                         <p class="parag">UI Designer</p>
                         <ul class="sect-contr-ul">
                            <li class="sect-contr-list">
-                              <a href="" class="sect-contr-a">
+                              <a href="https://www.instagram.com" class="sect-contr-a" target="_blank">
                                  <svg width="16" height="16" class="sect-contr-icon">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                  </svg>
                               </a>
                            </li>
                            <li class="sect-contr-list">
-                              <a href="" class="sect-contr-a">
+                              <a href="https://x.com" class="sect-contr-a" target="_blank">
                                  <svg width="16" height="16" class="sect-contr-icon">
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                  </svg>
                               </a>
                            </li>
                            <li class="sect-contr-list">
-                              <a href="" class="sect-contr-a">
+                              <a href="https://www.facebook.com" class="sect-contr-a" target="_blank">
                                  <svg width="16" height="16" class="sect-contr-icon">
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                  </svg>
                               </a>
                            </li>
                            <li class="sect-contr-list">
-                              <a href="" class="sect-contr-a">
+                              <a href="https://linkedin.com" class="sect-contr-a" target="_blank">
                                  <svg width="16" height="16" class="sect-contr-icon">
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                  </svg>
@@ -234,13 +299,18 @@
             </ul>
          </div>
       </section>
-      <section class="clsc">
+      <section class="clsc portf">
          <div class="container">
             <h2 class="glav">Our Portfolio</h2>
             <ul class="clscul">
                <li class="clscli">
                   <div class="clscli-div">
-                     <img src="./images/img.jpg" alt="img-0" width="360">
+                     <picture>
+                        <source media="(min-width: 1158px)" srcset="./images/bank-app-desktop1.jpg 1px, ./images/bank-app-desktop2.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="./images/bank-app-tablet1.jpg 1px, ./images/bank-app-tablet2.jpg 2x">
+                        <source media="(min-width: 767px)" srcset="./images/bank-app-mobile1.jpg 1px, ./images/bank-app-mobile2.jpg 2x">
+                        <img src="./images/img-5.jpg" alt="img-5" width="360">
+                     </picture>
                      <p class="clscli-div-p">
                         14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                         Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -253,7 +323,12 @@
                </li>
                <li class="clscli">
                   <div class="clscli-div">
-                     <img src="./images/img-1.jpg" alt="img-1" width="360">
+                     <picture>
+                        <source media="(min-width: 1158px)" srcset="./images/cash-pay-desktop1.jpg 1px, ./images/cash-pay-desktop2.jpg 2x" />
+                        <source media="(min-width: 768px)" srcset="./images/cash-pay-tablet1.jpg 1px, ./images/cash-pay-tablet2.jpg 2x" />
+                        <source media="(min-width: 767px)" srcset="./images/cash-pay-mobile1.jpg 1px, ./images/cash-pay-mobile2.jpg 2x" />
+                        <img src="./images/img-4.jpg" alt="img-4" width="360">
+                     </picture>
                      <p class="clscli-div-p">
                         14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                         Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -266,7 +341,12 @@
                </li>
                <li class="clscli">
                   <div class="clscli-div">
-                     <img src="./images/img-2.jpg" alt="img-2" width="360">
+                     <picture>
+                        <source media="(min-width: 1158px)" srcset="./images/medi-app-desktop1.jpg 1px, ./images/medi-app-desktop2.jpg 2x" />
+                        <source media="(min-width: 768px)" srcset="./images/medi-app-tablet1.jpg 1px, ./images/medi-app-tablet2.jpg 2x" />
+                        <source media="(min-width: 767px)" srcset="./images/medi-app-mobile1.jpg 1px, ./images/medi-app-mobile2.jpg 2x" />
+                        <img src="./images/img-3.jpg" alt="img-3" width="360">
+                     </picture>
                      <p class="clscli-div-p">
                         14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                         Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -279,7 +359,12 @@
                </li>
                <li class="clscli">
                   <div class="clscli-div">
-                     <img src="./images/img-3.jpg" alt="img-3" width="360">
+                     <picture>
+                        <source media="(min-width: 1158px)" srcset="./images/taxi-serv-desktop1.jpg 1px, ./images/taxi-serv-desktop2.jpg 2x" />
+                        <source media="(min-width: 768px)" srcset="./images/taxi-serv-tablet1.jpg 1px, ./images/taxi-serv-tablet2.jpg 2x" />
+                        <source media="(min-width: 767px)" srcset="./images/taxi-serv-mobile1.jpg 1px, ./images/taxi-serv-mobile2.jpg 2x" />
+                        <img src="./images/img-2.jpg" alt="img-2" width="360">
+                     </picture>
                      <p class="clscli-div-p">
                         14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                         Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -292,7 +377,12 @@
                </li>
                <li class="clscli">
                   <div class="clscli-div">
-                     <img src="./images/img-4.jpg" alt="img-4" width="360">
+                     <picture>
+                        <source media="(min-width: 1158px)" srcset="./images/scree-ill-desktop1.jpg 1px, ./images/scree-ill-desktop2.jpg 2x" />
+                        <source media="(min-width: 768px)" srcset="./images/scree-ill-tablet1.jpg 1px, ./images/scree-ill-tablet2.jpg 2x" />
+                        <source media="(min-width: 767px)" srcset="./images/scree-ill-mobile1.jpg 1px, ./images/scree-ill-mobile2.jpg 2x" />
+                        <img src="./images/img-1.jpg" alt="img-1" width="360">
+                     </picture>
                      <p class="clscli-div-p">
                         14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                         Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -305,7 +395,12 @@
                </li>
                <li class="clscli">
                   <div class="clscli-div">
-                     <img src="./images/img-5.jpg" alt="img-5" width="360">
+                     <picture>
+                        <source media="(min-width: 1158px)" srcset="./images/on-course-desktop1.jpg 1px, ./images/on-course-desktop2.jpg 2x" />
+                        <source media="(min-width: 768px)" srcset="./images/on-course-tablet1.jpg 1px, ./images/on-course-tablet2.jpg 2x" />
+                        <source media="(min-width: 767px)" srcset="./images/on-course-mobile1.jpg 1px, ./images/on-course-mobile2.jpg 2x" />
+                        <img src="./images/img.jpg" alt="img-0" width="360">
+                     </picture>
                      <p class="clscli-div-p">
                         14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                         Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -321,7 +416,7 @@
       </section>
    </main>
       <footer class="foot">
-            <div class="container">
+            <div class="container foot-cont">
                <div class="foot-div-div">
                   <a class="fot-logo" href="./index.html">Web<span class="spn">Studio</span></a>
                   <p class="par">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
@@ -330,28 +425,28 @@
                   <p class="foot-p">Social media</p>
                   <ul class="foot-ul">
                      <li class="foot-list">
-                        <a href="" class="foot-list-a">
+                        <a href="https://www.instagram.com" class="foot-list-a" target="_blank">
                            <svg width="24" height="24" class="foot-svg">
                               <use href="./images/icons.svg#icon-instagram"></use>
                            </svg>
                         </a>
                      </li>
                      <li class="foot-list">
-                        <a href="" class="foot-list-a">
+                        <a href="https://x.com" class="foot-list-a" target="_blank">
                            <svg width="24" height="24" class="foot-svg">
                               <use href="./images/icons.svg#icon-twitter"></use>
                            </svg>
                         </a>
                      </li>
                      <li class="foot-list">
-                        <a href="" class="foot-list-a">
+                        <a href="https://www.facebook.com" class="foot-list-a" target="_blank">
                            <svg width="24" height="24" class="foot-svg">
                               <use href="./images/icons.svg#icon-facebook"></use>
                            </svg>
                         </a>
                      </li>
                      <li class="foot-list">
-                        <a href="" class="foot-list-a">
+                        <a href="https://linkedin.com" class="foot-list-a" target="_blank">
                            <svg width="24" height="24" class="foot-svg">
                               <use href="./images/icons.svg#icon-linkedin"></use>
                            </svg>
@@ -383,11 +478,11 @@
                </svg>
             </button>
             <p class="modal-p">Leave your contacts and we will call you back</p>
-            <form>
+            <form class="ovar-form" name="ord-form" autocomplete="off">
                <div class="modal-form-div">
                   <label for="user-name" class="modal-form-div-label">Name</label>
                   <div class="modal-form-div-div">
-                     <input id="user-name" name="user-name" type="text" class="modal-input-us-name">
+                     <input id="user-name" name="user-name" type="text" class="modal-input-us-name" pattern="[a-zA-Zа-яА-ЯЇїІієЄ']{2,50}" required autocomplete="off">
                      <svg width="18" height="24" class="modal-form-div-svg">
                         <use href="./images/icons.svg#icon-person-black"></use>
                      </svg>
@@ -396,7 +491,7 @@
                <div class="modal-form-div">
                   <label for="user-phone" class="modal-form-div-label">Phone</label>
                   <div class="modal-form-div-div">
-                     <input id="user-phone" name="user-phone" type="text" class="modal-input-us-name">
+                     <input id="user-phone" name="user-phone" type="text" class="modal-input-us-name" pattern="^\+?[0-9]{7,15}$" required autocomplete="off">
                      <svg width="18" height="24" class="modal-form-div-svg">
                         <use href="./images/icons.svg#icon-phone-black"></use>
                      </svg>
@@ -405,7 +500,7 @@
                <div class="modal-form-div">
                   <label for="user-email" class="modal-form-div-label">Email</label>
                   <div class="modal-form-div-div">
-                     <input id="user-email" name="user-email" type="text" class="modal-input-us-name">
+                     <input id="user-email" name="user-email" type="text" class="modal-input-us-name" required autocomplete="off">
                      <svg width="18" height="24" class="modal-form-div-svg">
                         <use href="./images/icons.svg#icon-email-black"></use>
                      </svg>
@@ -413,10 +508,10 @@
                </div>
                <div class="modal-form-comment">
                   <label for="user-comment" class="modal-form-div-label">Comment </label>
-                  <textarea name="user-comment" id="user-comment" placeholder="Text input" class="mod-form-com-text"></textarea>
+                  <textarea name="user-comment" id="user-comment" placeholder="Text input" class="mod-form-com-text" rows="5"></textarea>
                </div>
                <div class="modal-check">
-                  <input type="checkbox" name="user-privacy" id="user-privacy" value="true" class="modal-check-input visually-hidden">
+                  <input type="checkbox" name="user-privacy" id="user-privacy" value="true" class="modal-check-input visually-hidden" required>
                   <label for="user-privacy" class="modal-check-label">
                      <span class="modal-label-span">
                         <svg width="10" height="8" class="modal-label-gal">
